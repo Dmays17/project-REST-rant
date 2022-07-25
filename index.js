@@ -13,7 +13,7 @@ app.use('/places', require('./controllers/places'))
 
 
 app.get('*',(req,res)=>{
-    res.send('<h1>Nice 404<h1>')
+    res.render('error404')
 })
 console.log(PORT)
 app.listen(PORT)
