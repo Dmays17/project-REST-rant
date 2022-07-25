@@ -12,4 +12,4 @@ function Def(html){
     )
 }
 
-mondule.exports=Def
+module.exports=Def
