@@ -10,7 +10,7 @@ app.get('/',(req,res)=>{
     res.render('home')
 })
 //app.use('/places', require('./controllers/places'))
-app.get('/',(req,res)=>{
+app.get('/places',(req,res)=>{
     let places = [{
         name: 'H-Thai-ML',
         city: 'Seattle',
