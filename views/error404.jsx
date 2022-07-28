@@ -6,6 +6,7 @@ function error404(){
         <main>
             <h1>404: Page Not Found</h1>
             <p>Oops, sorry, we can't find this page!</p>
+            <img src='https://http.cat/404' alt='hidden Kittey'></img>
         </main>
     </Def>
     )
