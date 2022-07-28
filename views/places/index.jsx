@@ -2,6 +2,7 @@ const React=require('react')
 const Def=require('../default')
 
 function index (data) {
+  console.log("this is data",data)
   let placesFormatted = data.places.map((place,index) => {
     return (
       <div key={index} className="col-sm-6" >
