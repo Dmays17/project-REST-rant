@@ -2,3 +2,36 @@ h1{
     text-align: center;
     color: fuchsia;
 }
+nav{
+    background-color: #d6d5d1;
+    padding: 10px;
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    
+}
+nav li{
+    display: inline;
+    margin-right: 25px;
+}
+nav a{
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: fuchsia;
+    
+}
+body{
+    background-color: bisque;
+    text-align: center;
+}
+main{
+    background-color: cadetblue;
+    margin-right: 20px;
+    margin-left:20px
+}
