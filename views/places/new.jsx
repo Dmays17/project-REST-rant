@@ -27,6 +27,10 @@ return (
     <label htmlFor="cuisines">Cuisines</label>
     <input className='form-control' id="cuisines" name="cuisines" />
   </div>
+  <div className='form-control'>
+    <label for="founded">Founded Year</label>
+    <input className='form-control' id="founded" name='founded'/>
+  </div>
   <input className='btn btn-primary' type="submit" value="Add Place" />
 </form>
 

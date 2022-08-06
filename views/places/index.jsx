@@ -3,11 +3,11 @@ const Def=require('../default')
 
 function index (data) {
   console.log("this is data",data)
-  let placesFormatted = data.places.map((place,index) => {
+  let placesFormatted = data.places.map((place) => {
     return (
       <div key={index} className="col-sm-6" >
         <h2>
-        <a href={`/places/${index}`}>
+        <a href={`/places/${place.id}`}>
           {place.name}
           </a>
           </h2>
