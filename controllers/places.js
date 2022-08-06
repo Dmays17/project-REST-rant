@@ -26,8 +26,8 @@ router.post('/', (req, res) => {
 
 router.get('/new', (req, res) => {
   db.Place.findById(req.params.id)
-  .then(place=>{
-    res.render('places/show',{place})
+  .then(place =>{
+    res.render('places/new',{place})
   })
   .catch(err=>{
     console.log('err',err)
@@ -35,8 +35,16 @@ router.get('/new', (req, res) => {
   })
 })
 
+
 router.get('/:id', (req, res) => {
-  res.send('GET /places/:id stub')
+  db.Place.findById(req.params.id)
+  .then(place =>{
+    res.render('places/show',{place})
+  })
+  .catch(err=>{
+    console.log('err',err)
+    res.render('error404')
+  })
 })
 
 router.put('/:id', (req, res) => {
