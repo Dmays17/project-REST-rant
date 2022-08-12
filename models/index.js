@@ -7,3 +7,4 @@ mongoose.connect("mongodb://localhost:27017/rest-rant", {
 })
 
 module.exports.Place = require('./places')
+module.exports.Comment = require('./comment')
