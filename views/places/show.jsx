@@ -35,6 +35,39 @@ function show(data){
                 <h3>Serving {data.place.cuisines}</h3>
                 <h2>Comments</h2>
                 {comments}
+                {/* comments form */}
+                <h2>Got Your Own Rant of Rave</h2>
+                <form action={`/places/${data.place.id}/comment`} method="POST">
+                <div className='row'>
+                    <div className='form-group col-sm-12'>
+                    <label htmlFor='content'>Content </label>
+                    <textarea 
+                    id='content'
+                    name='content'
+                    className='form-control'>
+                    </textarea>
+                    </div>
+                </div>
+                <div className="row">
+                <div className="form-group col-sm-4">
+                  <label htmlFor="author">Author</label>
+                  <input id="author" name="author" className="form-control" />
+                </div>
+                <div className="form-group col-sm-4">
+                  <label htmlFor="stars">Star Rating</label>
+                  <input type="range" step="0.5" min="1" max="5" id="stars" name="stars" className="form-control" />
+                </div>
+                <div className="form-group col-sm-2">
+                  <label htmlFor="rant">Rant?</label>
+                  <input type="checkbox" id="rant" name="rant" className="form-control" />
+                </div>
+              </div>
+              <input type="submit" className="btn btn-primary" value="Add Comment" />
+
+                </form>
+                
+                {/* comments form */}
+
             </main>
             <a href={`/places/${data.id}/edit`} className='btn btn-warning'>Edit</a>
             
